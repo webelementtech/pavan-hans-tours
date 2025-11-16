@@ -1,6 +1,10 @@
 #!/bin/bash
 
-WEBROOT=~/domains/goldgladiators.com/public_html/test
+PROJECT_DIR=/domains/test.goldgladiators.com/public_html/test
+WEBROOT=/domains/test.goldgladiators.com/public_html/test/dist
+
+echo "Switching to project directory..."
+cd $PROJECT_DIR || exit
 
 echo "Pulling latest changes..."
 git pull origin main
@@ -11,8 +15,10 @@ npm install --force
 echo "Building project..."
 npm run build
 
-echo "Deploying files to public_html..."
+echo "Cleaning old build files..."
 rm -rf $WEBROOT/*
-cp -R dist/* $WEBROOT/
+
+echo "Copying new build files..."
+cp -R $PROJECT_DIR/dist/* $WEBROOT/
 
 echo "Deployment complete!"
