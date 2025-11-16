@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WEBROOT=~/domains/test.goldgladiators.com/public_html/test
+WEBROOT=~/domains/goldgladiators.com/public_html/test
 
 echo "Pulling latest changes..."
 git pull origin main
