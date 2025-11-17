@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Set project directory to the folder where package.json and dist/ exist
+# Set project directory to the folder where package.json and dist/exist
 PROJECT_DIR="/home/u469252708/domains/pavanhanstours.com/public_html"
 
 # Set deploy directory (where built files should go)
