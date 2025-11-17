@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Set project directory to the folder where package.json and dist/ exist
-PROJECT_DIR="/home/u469252708/domains/goldgladiators.com/public_html/test"
+PROJECT_DIR="/home/u469252708/domains/pavanhanstours.com/public_html"
 
 # Set deploy directory (where built files should go)
-DEPLOY_DIR="/home/u469252708/domains/goldgladiators.com/public_html/test/dist"
+DEPLOY_DIR="/home/u469252708/domains/pavanhanstours.com/public_html"
 
 echo "Switching to project directory..."
 cd $PROJECT_DIR || { echo "Failed to cd into project directory"; exit 1; }
